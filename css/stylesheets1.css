@@ -90,7 +90,7 @@ nav .menu-btn:hover + .menu, nav .menu:hover {
     padding: 40px;
 }
 
-.main-content .left-section img {
+.main-content .left-section iframe {
     width: 900px;
     height: 600px;
     border-radius: 10px;
@@ -140,8 +140,26 @@ nav .menu-btn:hover + .menu, nav .menu:hover {
 .additional-content .right-column p {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.additional-content .right-column ul {
+     
+  padding-left: 20px;
+  margin-top: 10px;     
+}
+
+.additional-content .right-column li a {  
+  color: #BCB7C6;
+  font-size: 1.5em;
+  font-weight: bold;          
+}
+
+.additional-content .right-column ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  margin-top: 10px;
 }
 
 /* Rodapé */
