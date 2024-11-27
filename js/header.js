@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="menu">
                     <ul>
-                    <div class="container-menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="assunto.html">Assunto 1</a></li>
                         <li><a href="assunto2.html">Assunto 2</a></li>
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="politica.html">Política do site</a></li>
                         <li><a href="#" id="theme-toggle">Alterar Tema</a></li>
-                    </div>
                     </ul>
                 </div>
             </nav>

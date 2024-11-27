@@ -29,17 +29,17 @@
     width: 100%;
 }
 .menu ul li a{
-    position: absolute;
+    /* position: absolute; */
     top:0; 
     left:0;
     color:white;
     font-family: "Playfair Display", serif;
+    /* background-color: tomato; */
     font-size:2rem;
+    text-align: center;
     transition: .5s ease;
 }
 .menu ul li a:hover{
-    /* letter-spacing: 3px; */
-    /* transform-origin: center; */
     transform:scale(1.2);
 }
 .menu ul li{
@@ -47,7 +47,6 @@
     max-width: 500px;
     white-space: nowrap;
     position: relative;
-    padding:2rem;
 }
 .menu ul li a::before{
     content: '';
@@ -57,10 +56,11 @@
     width: 5px;
     height: 5px;
     border-radius:5px;
-    background:white;
+    background:transparent;
     transition: .5s ease-in-out;
 }
 .menu ul li:hover a::before{
+    background-color: white;
     width:2px;
     height: 100%;
     border-radius:30px;
