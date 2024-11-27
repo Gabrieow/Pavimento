@@ -20,6 +20,7 @@
     max-width: 100%;
     padding:3rem;
     transition: .5s ease;
+    z-index: 9999;
 }
 .menu ul{
     display: flex;
@@ -78,7 +79,7 @@
     cursor: pointer;
     height:35px;
     width:35px;
-    z-index: 999;
+    z-index: 99999;
 }
 .visible-menu{
     pointer-events: initial;
