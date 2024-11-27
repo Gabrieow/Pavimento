@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e tipografia */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #f6f8e4;
+    background-color: #302c2c;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #302c2c;
+    color: #f6f8e4;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+/* 
+nav {
+    position: relative;
+}
+nav .menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+nav .menu-btn img{
+    height: 60px;                              
+    border: none;
+}
+
+nav .menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);                    
+    display: none;
+    background-color: #302c2c;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .menu ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav .menu ul li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav .menu ul li a {
+    color: #f6f8e4;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+nav .menu ul li a:hover {
+    background-color: #32523c;
+    color: #f6f8e4;
+}
+
+nav .menu-btn:hover + .menu, nav .menu:hover {
+    display: block;
+    
+} */
+
+/* Sessão principal */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.main-content .left-section img {
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.main-content .right-section {
+    max-width: 600px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main-content hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Sessão abaixo da principal */
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.additional-content .left-column,
+.additional-content .right-column {
+    width: 48%;
+}
+
+.additional-content .left-column img,
+.additional-content .right-column img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.additional-content .right-column p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #302c2c;
+    color: #f6f8e4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content, .additional-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .left-section,
+    .main-content .right-section,
+    .additional-content .left-column,
+    .additional-content .right-column {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* ------------------- Páginas de info -------------------------- */
+
+.body-info {
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #302c2c;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.container-info {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #BCB7C6;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-info {
+    background-color: #32523C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content-info {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #302c2c;
+  }
+  .content-info h2 {
+    margin-top: 0;
+  }
+  .content-info h3 {
+    margin-top: 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  button {
+    background-color: #32523C;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #444;
+  }
+
+ /* ------------- PÁGINAS DE ASSUNTO/CONTEUDO ------------------*/
+
+ .body-cont {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #f6f8e4;
+    background-color: #302c2c;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+  .container-cont {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+  }
+  
+  .carrossel {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+  .content-cont {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Coluna esquerda */
+  .coluna-esq-cont {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box-cont {
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .box-cont img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+  
+  /* Coluna direita */
+  .coluna-dir-cont {
+    flex: 2;
+    background-color: #302c2c;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .coluna-dir-cont h2 {
+    color: #f6f8e4;
+  }
+  
+  .coluna-dir-cont p {
+    color: #f6f8e4;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

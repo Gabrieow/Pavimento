@@ -1,0 +1,122 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.menu{
+    background:url('data:image/svg+xml,<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><defs><filter id="b" x="-500" y="-500" width="2000" height="2000" filterUnits="userSpaceOnUse"><feGaussianBlur in="SourceGraphic" stdDeviation="100"/></filter><filter id="a" x="-500" y="-500" width="2000" height="2000" filterUnits="userSpaceOnUse">><feFlood flood-color="%23fff" result="neutral-gray"/><feTurbulence type="fractalNoise" baseFrequency="2.5" numOctaves="100" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise"/><feComponentTransfer in="desaturatedNoise" result="theNoise"><feFuncA type="table" tableValues="0 0 0.05 0"/></feComponentTransfer><feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image"/></filter><radialGradient id="c" cx="50%" cy="50%" r="50%" fx="20%" fy="40%"><stop offset="0%" stop-color="%2349805e"/><stop offset="100%" stop-color="rgba(73,121,128,0.2)"/></radialGradient></defs><rect width="100%" height="100%"/><g filter="url(%23a)"><g filter="url(%23b)"><svg width="1000" height="1000" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" transform="translate(-16.166 -17.051)"><path fill="url(%23c)" d="M475.5 404q-55.5 104-182 115T137 415q-30-115 15-204.5T301.5 119q104.5-2 167 89.5t7 195.5Z"/></svg></g></g><svg width="500" height="90.312" viewBox="0 0 1218 220" fill="none" xmlns="http://www.w3.org/2000/svg" transform="translate(250 454.844)"><path  fill="%23011537"/></svg></svg>');
+    background-size:cover;
+    background-position: center;;
+    display: flex;
+    opacity: 0 !important;
+    pointer-events:none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:0;
+    top:0;
+    width:auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    padding:3rem;
+    transition: .5s ease;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.menu ul li a{
+    position: absolute;
+    top:0; 
+    left:0;
+    color:white;
+    font-family: "Playfair Display", serif;
+    font-size:2rem;
+    transition: .5s ease;
+}
+.menu ul li a:hover{
+    /* letter-spacing: 3px; */
+    /* transform-origin: center; */
+    transform:scale(1.2);
+}
+.menu ul li{
+    display: flex;
+    max-width: 500px;
+    white-space: nowrap;
+    position: relative;
+    padding:2rem;
+}
+.menu ul li a::before{
+    content: '';
+    position: absolute;
+    left:-25px;
+    top:calc(50% - 2px);
+    width: 5px;
+    height: 5px;
+    border-radius:5px;
+    background:white;
+    transition: .5s ease-in-out;
+}
+.menu ul li:hover a::before{
+    width:2px;
+    height: 100%;
+    border-radius:30px;
+    left:-10px;
+    top: 0;
+}
+.toggle-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    align-items: center;
+    position: absolute;
+    top:calc(17px);
+    right:50px;
+    cursor: pointer;
+    height:35px;
+    width:35px;
+    z-index: 999;
+}
+.visible-menu{
+    pointer-events: initial;
+    opacity: 1 !important
+}
+.bar{
+    position: relative;
+    width:30px;
+    height: 3px;
+    background-color: white;
+    transition:.5s ease
+}
+.middle-bar{
+    background:transparent !important
+}
+.top-bar{
+    position: absolute;
+    transform: rotate(45deg);
+    
+}
+.bottom-bar{
+    position: absolute;
+    transform: rotate(-45deg);
+    
+}
+.toggle_icon{
+    background:#ffffff22;
+    border-radius:100%;
+    width:50px;
+    height: 50px;;
+}
+.header{
+    position:absolute;
+    transition:.2s ease;
+}
+.sticky-header{
+    position:fixed;
+    width:100%;
+    top: 0;
+    transition:0s;
+}
