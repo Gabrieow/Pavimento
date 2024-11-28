@@ -409,3 +409,44 @@ footer {
   .sustainable-tech-table tbody tr:hover {
     background-color: #555;
 }
+
+/* responsividade */
+
+@media (max-width: 768px) {
+  .content-cont {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carrossel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .coluna-esq-cont, .coluna-dir-cont {
+    flex: 1;
+  }
+
+  .coluna-esq-cont img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .coluna-dir-cont h1 {
+    font-size: 1.8em;
+  }
+
+  .coluna-dir-cont h2 {
+    font-size: 1.2em;
+  }
+
+  .coluna-dir-cont p {
+    font-size: 1em;
+  }
+
+  .coluna-esq-cont img {
+    height: 300px; /* Ajuste a altura da imagem em telas menores */
+  }
+}
