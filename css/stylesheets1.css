@@ -15,17 +15,17 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 64;
+  font-size: 64px;
 }
 
 p {
   font-weight: 500;
-  font-size: 32;
+  font-size: 32px;
 }
 
 small {
   font-weight: 350;
-  font-size: 20;
+  font-size: 20px;
 }
 
 
