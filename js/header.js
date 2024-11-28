@@ -17,13 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="assunto.html">Assunto 1</a></li>
-                        <li><a href="assunto2.html">Assunto 2</a></li>
-                        <li><a href="assunto3.html">Assunto 3</a></li>
+                        <li><a href="assunto.html">Projetos Inspiradores</a></li>
+                        <li><a href="assunto2.html">Tecnologias Sustentáveis</a></li>
+                        <li><a href="assunto3.html">Cidades Sustentáveis</a></li>
                         <li><a href="contato.html">Contato</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="politica.html">Política do site</a></li>
-                        <li><a href="#" id="theme-toggle">Alterar Tema</a></li>
                     </ul>
                 </div>
             </nav>
