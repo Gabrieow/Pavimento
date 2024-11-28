@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const headerHTML = `
-        <header>
+        <header class="header">
             <div class="logo">
-                <img src="logo.png" alt="Logo">
+                <img src="imgs/icone-pavimento-branco.svg" alt="logo site" width="30px" height="30px">
+                <p class="nome-logo">Pavimento</p>
             </div>
             <nav>
                 <button class="theme-switch">

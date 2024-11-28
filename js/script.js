@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () =>{
     //darkmode
     var darkmode = document.querySelector(".night-mode");
     var lightmode = document.querySelector(".light-mode");
-    var btnSwitch = document.querySelector(".theme-switch")
+    var btnSwitch = document.querySelector(".theme-switch");
+    var svgLogo = document.querySelector(".logo img");
+    var nomeLogo = document.querySelector(".nome-logo");
 
     function addLightMode(filepath){
         const link = document.createElement("link");
@@ -55,14 +57,16 @@ document.addEventListener("DOMContentLoaded", () =>{
             lightmode.classList.remove('theme-desactive');
             darkmode.classList.add('theme-desactive');
             lightmode.classList.add('theme-active');
+            svgLogo.src = "imgs/icone-pavimento-preto.svg";
+            nomeLogo.classList.add('switch-logo');
             addLightMode("css/dark-mode.css")
         }else if(lightmode.classList.contains('theme-active')){
             lightmode.classList.remove('theme-active');
             darkmode.classList.remove('theme-desactive');
             lightmode.classList.add('theme-desactive');
             darkmode.classList.add('theme-active');
-            console.log('tema escuro ativo agora')
-            // removeLightMode();
+            nomeLogo.classList.remove('switch-logo');
+            svgLogo.src = "imgs/icone-pavimento-branco.svg"
             document.querySelector('link[href="css/dark-mode.css"]').parentNode.removeChild(document.querySelector('link[href="css/dark-mode.css"]'))
         }
     })

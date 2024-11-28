@@ -39,10 +39,6 @@ header {
     color: #f6f8e4;
 }
 
-header .logo img {
-    width: 150px;
-}
-
 /* Sessão principal */
 .main-content {
     display: flex;
