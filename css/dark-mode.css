@@ -4,6 +4,7 @@ body{
 p, h1, h2, h3, li{
     color: var(--preto);
 }
+
 header, footer{
     background-color: var(--branco) !important;
 }
@@ -14,4 +15,17 @@ header, footer{
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.coluna-esq-cont h6{
+    color: black;
+}
+
+.coluna-dir-cont{
+    background-color: var(--branco) !important;
+}
+
+
+.coluna-dir-cont p, .coluna-dir-cont h2{
+    color: black;
 }
