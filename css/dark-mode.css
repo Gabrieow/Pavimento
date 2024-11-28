@@ -1,0 +1,17 @@
+body{
+    background-color: var(--branco) !important;
+}
+p, h1, h2, h3{
+    color: var(--preto);
+}
+header{
+    background-color: var(--branco) !important;
+}
+.toggle-menu .bar{
+    background-color: var(--preto);
+}
+.sticky-header{
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
