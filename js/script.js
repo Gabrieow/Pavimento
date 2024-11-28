@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             lightmode.classList.remove('theme-desactive');
             darkmode.classList.add('theme-desactive');
             lightmode.classList.add('theme-active');
-            addLightMode("/css/dark-mode.css")
+            addLightMode("css/dark-mode.css")
         }else if(lightmode.classList.contains('theme-active')){
             lightmode.classList.remove('theme-active');
             darkmode.classList.remove('theme-desactive');
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             darkmode.classList.add('theme-active');
             console.log('tema escuro ativo agora')
             // removeLightMode();
-            document.querySelector('link[href="/css/dark-mode.css"]').parentNode.removeChild(document.querySelector('link[href="/css/dark-mode.css"]'))
+            document.querySelector('link[href="css/dark-mode.css"]').parentNode.removeChild(document.querySelector('link[href="css/dark-mode.css"]'))
         }
     })
 
