@@ -71,49 +71,56 @@ header .logo img {
 
 /* Sessão abaixo da principal */
 .additional-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
-.additional-content .left-column,
-.additional-content .right-column {
+.upper-row,
+.lower-row {
+  display: flex;
+  gap: 20px;
   width: 100%;
-  max-width: 48%;
-  margin-bottom: 20px;
 }
 
-.additional-content .left-column img,
-.additional-content .right-column img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Proportions: Left column is smaller, Right column is 1.8x the width */
+.upper-left-column,
+.lower-left-column {
+  flex: 1;
 }
 
-.additional-content .right-column p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.upper-right-column,
+.lower-right-column {
+  flex: 1.8;
 }
 
-.additional-content .right-column ul {
-     
-  padding-left: 20px;
-  margin-top: 10px;     
+/* Heights: Lower is 1.6x the height of the upper */
+.upper-left-column,
+.upper-right-column {
+  height: 35%; /* Define a base height */
 }
 
-.additional-content .right-column li a {  
-  color: #BCB7C6;
-  font-size: 1.5em;
-  font-weight: bold;          
+.lower-left-column,
+.lower-right-column {
+  height: 56%; /* 1.6x the height of the upper */
 }
 
-.additional-content .right-column ul li {
+/* Content Styling */
+.upper-left-column p,
+.lower-left-column p,
+.lower-right-column p {
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.upper-right-column img,
+.lower-left-column img,
+.lower-right-column img {
+  width: 100%;
+  height: auto;
   margin-bottom: 10px;
-  list-style-type: disc;
-  margin-top: 10px;
 }
 
 /* Rodapé */
