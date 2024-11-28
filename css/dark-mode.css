@@ -1,10 +1,10 @@
 body{
     background-color: var(--branco) !important;
 }
-p, h1, h2, h3{
+p, h1, h2, h3, li{
     color: var(--preto);
 }
-header{
+header, footer{
     background-color: var(--branco) !important;
 }
 .toggle-menu .bar{

@@ -32,7 +32,40 @@ document.addEventListener("DOMContentLoaded", () =>{
         }else{
             header.classList.remove('sticky-header');
         }
-
-        // console.log(scrollPosition)
     })
+
+    //darkmode
+    var darkmode = document.querySelector(".night-mode");
+    var lightmode = document.querySelector(".light-mode");
+    var btnSwitch = document.querySelector(".theme-switch")
+
+    function addLightMode(filepath){
+        const link = document.createElement("link");
+
+        link.rel = 'stylesheet';
+        link.type = "text/css";
+        link.href = filepath;
+
+        document.head.appendChild(link);
+    }
+
+    btnSwitch.addEventListener('click', () => {
+        if(darkmode.classList.contains('theme-active')){
+            darkmode.classList.remove('theme-active');
+            lightmode.classList.remove('theme-desactive');
+            darkmode.classList.add('theme-desactive');
+            lightmode.classList.add('theme-active');
+            addLightMode("/css/dark-mode.css")
+        }else if(lightmode.classList.contains('theme-active')){
+            lightmode.classList.remove('theme-active');
+            darkmode.classList.remove('theme-desactive');
+            lightmode.classList.add('theme-desactive');
+            darkmode.classList.add('theme-active');
+            console.log('tema escuro ativo agora')
+            // removeLightMode();
+            document.querySelector('link[href="/css/dark-mode.css"]').parentNode.removeChild(document.querySelector('link[href="/css/dark-mode.css"]'))
+        }
+    })
+
+
 })
