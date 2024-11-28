@@ -176,7 +176,7 @@ footer {
     }
 }
 
-/* ------------------- Páginas de info -------------------------- */
+/* ------------------- ESTRUTURA Páginas de info -------------------------- */
 
 .body-info {
     line-height: 1.6;
@@ -254,7 +254,7 @@ footer {
     background-color: #444;
   }
 
- /* ------------- PÁGINAS DE ASSUNTO/CONTEUDO ------------------*/
+ /* ------------- ESTRUTURA PÁGINAS DE ASSUNTO/CONTEUDO ------------------*/
 
  .body-cont {
     font-family: Helvetica, Arial, sans-serif;
@@ -333,3 +333,79 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  /* ESTILIZAÇÃO Páginas de Assunto */
+
+  .coluna-esq-cont img{
+    margin-top: 50px;
+    height: 450px;
+    
+  }
+
+  .coluna-esq-cont h6{
+    font-size: 0.9em;
+  }
+
+  .coluna-dir-cont h1{
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .coluna-dir-cont h2{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .coluna-dir-cont h3{
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .coluna-dir-cont p{
+    font-size: 1.2em;
+  }
+
+  .coluna-dir-cont a,
+  .coluna-esq-cont a{
+    color: #BCB7C6;
+    font-weight: bold; 
+  }
+
+  .coluna-dir-cont li{
+    font-size: 1.2em;
+    list-style-type: disc;
+
+  }
+
+  /* ESTILIZAÇÃO DA TABELA NA PÁGINA DE TECNOLOGIA SUSTENTAVEL */
+
+  .sustainable-tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin: 20px 0;
+    background-color: #302c2c;
+    color: #f6f8e4;
+}
+
+  .sustainable-tech-table thead th {
+    background-color: #32523C;
+    color: #f6f8e4;
+    padding: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+  .sustainable-tech-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+  .sustainable-tech-table tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+  .sustainable-tech-table tbody tr:hover {
+    background-color: #555;
+}
