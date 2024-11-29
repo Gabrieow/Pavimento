@@ -162,6 +162,9 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+footer p {
     font-size: 0.8em;
 }
 
