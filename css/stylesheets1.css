@@ -18,11 +18,24 @@ h1 {
   font-size: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 24px;
+}
+>>>>>>> 5d0c2ffe68c3ac459014f4d4d2385d6300541fe7
 
 small {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
 }
+
 
 
 
@@ -33,6 +46,8 @@ small {
     justify-content: space-between;
     padding: 40px;
     gap: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .main-content .left-section iframe {
@@ -64,8 +79,7 @@ small {
 }
 
 .main-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 /* Sessão abaixo da principal */
@@ -73,7 +87,9 @@ small {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .upper-row,
@@ -83,43 +99,53 @@ small {
   width: 100%;
 }
 
-/* Proportions: Left column is smaller, Right column is 1.8x the width */
+.upper-row {
+  padding-bottom: 20px;
+}
+
+.lower-row {
+  padding-top: 20px
+}
+
 .upper-left-column,
 .lower-left-column {
   flex: 1;
+  max-width: 40%;
+  padding-right: 20px;
 }
 
 .upper-right-column,
 .lower-right-column {
   flex: 1.8;
+  padding-left: 20px;
 }
 
-/* Heights: Lower is 1.6x the height of the upper */
 .upper-left-column,
 .upper-right-column {
-  height: 35%; /* Define a base height */
+  max-height: 35%;
 }
 
 .lower-left-column,
 .lower-right-column {
-  height: 56%; /* 1.6x the height of the upper */
+  max-height: 75%;
 }
 
-/* Content Styling */
-.upper-left-column p,
-.lower-left-column p,
+.upper-right-column p,
 .lower-right-column p {
-  text-align: justify;
-  line-height: 1.5;
-  padding: 10px;
+  text-align: left;
+  line-height: 1.25;
 }
 
-.upper-right-column img,
+.lower-right-column p {
+  padding-top: 24px;
+}
+
+.upper-left-column img,
 .lower-left-column img,
 .lower-right-column img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  object-fit: cover;
 }
 
 /* Rodapé */
@@ -134,30 +160,73 @@ footer {
 /* Responsividade */
 
   @media screen and (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .main-content .left-section iframe {
-        height: 300px;
-    }
+  .main-content .left-section iframe {
+    width: 100%;
+    height: 300px;
+  }
 
-    .main-content .right-section {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .main-content .right-section {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    width: 100%;
+  }
 
-    .additional-content {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
 
-    .additional-content .left-column,
-    .additional-content .right-column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .main-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .additional-content {
+    gap: 10px;
+    width: 100%; 
+  }
+
+  .upper-row, .lower-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .upper-left-column, 
+  .upper-right-column, 
+  .lower-left-column, 
+  .lower-right-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .upper-right-column img,
+  .lower-left-column img,
+  .lower-right-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .upper-left-column,
+  .upper-right-column,
+  .lower-left-column,
+  .lower-right-column p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .lower-right-column {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }
 
 /* ------------------- ESTRUTURA Páginas de info -------------------------- */
