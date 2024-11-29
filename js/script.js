@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", () =>{
-    var toggleMenu = document.querySelector('.toggle-menu');
-    var menu = document.querySelector('.menu');
-    var barMenu = document.querySelectorAll('.bar')
-    var body = document.body;
-    var header = document.querySelector("header");
+    const html = document.querySelector('html')
+    const toggleMenu = document.querySelector('.toggle-menu');
+    const menu = document.querySelector('.menu');
+    const barMenu = document.querySelectorAll('.bar');
+    const header = document.querySelector("header");
 
     //efeito mega menu
     toggleMenu.addEventListener('click', () => {
         if(toggleMenu.classList.contains('toggle_icon')){
-            body.style.overflow = "initial"
+            html.style.overflow = "initial"
             menu.classList.remove("visible-menu");
             toggleMenu.classList.remove("toggle_icon");
             barMenu[0].classList.remove('top-bar');
             barMenu[1].classList.remove('middle-bar');
             barMenu[2].classList.remove('bottom-bar');
         }else{
-            body.style.overflow = "hidden"
+            html.style.overflow = "hidden "
             menu.classList.add("visible-menu");
             toggleMenu.classList.add("toggle_icon");
             barMenu[0].classList.add('top-bar');
@@ -27,19 +27,20 @@ document.addEventListener("DOMContentLoaded", () =>{
     document.addEventListener('scroll', () => {
         // var headerY = header.getBoundingClientRect().top;
         var scrollPosition = window.scrollY
+        console.log(scrollPosition)
         if(scrollPosition >= 400){
-            header.classList.add("sticky-header")
+            header.classList.add("sticky-header");
         }else{
             header.classList.remove('sticky-header');
         }
     })
 
     //darkmode
-    var darkmode = document.querySelector(".night-mode");
-    var lightmode = document.querySelector(".light-mode");
-    var btnSwitch = document.querySelector(".theme-switch");
-    var svgLogo = document.querySelector(".logo img");
-    var nomeLogo = document.querySelector(".nome-logo");
+    const darkmode = document.querySelector(".night-mode");
+    const lightmode = document.querySelector(".light-mode");
+    const btnSwitch = document.querySelector(".theme-switch");
+    const svgLogo = document.querySelector(".logo img");
+    const nomeLogo = document.querySelector(".nome-logo");
 
     function addLightMode(filepath){
         const link = document.createElement("link");
