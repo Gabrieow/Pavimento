@@ -9,6 +9,7 @@ html{
 :root{
     --branco: #f6f8e4;
     --preto: #302c2c;
+    --verde: #32523c;
 }
 .header{
     display: flex;
