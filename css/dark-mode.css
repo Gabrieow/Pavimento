@@ -23,12 +23,12 @@ header, footer{
 
 .coluna-esq-cont h6{
     color: var(--preto) !important;
+    
 }
 
 .coluna-dir-cont{
     background-color: var(--branco) !important;
 }
-
 
 .coluna-dir-cont p, .coluna-dir-cont h2{
     color: var(--preto) !important;  
@@ -37,5 +37,17 @@ header, footer{
 .upper-left-column a, .lower-left-column a, .lower-right-column a,
 .coluna-dir-cont a, .coluna-esq-cont a{
     color: var(--verde) !important;
+    
      
   }
+
+.upper-left-column a:hover, .lower-left-column a:hover, .lower-right-column a:hover,
+.coluna-dir-cont a:hover, .coluna-esq-cont a:hover{
+    text-shadow: 2px 2px 4px rgba(50, 82, 60, 0.4);
+    cursor: pointer;
+}
+
+.coluna-esq-cont a:hover , .coluna-dir-cont a:hover{
+    text-shadow: 2px 2px 4px rgba(50, 82, 60, 0.4);
+    cursor: pointer;
+}
