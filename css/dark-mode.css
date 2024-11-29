@@ -5,6 +5,10 @@ p, h1, h2, h3, li{
     color: var(--preto);
 }
 
+.slider h3{
+    color: white;
+}
+
 header, footer{
     background-color: var(--branco) !important;
 }
