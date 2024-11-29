@@ -6,40 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contate-nos</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheets1.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
     <script src="js/header.js"></script>
-    
+
 </head>
 
 <body class="body-info">
-    <div class="container-info">
-        <div class="header-info">
-            <h1>Fale conosco!</h1>
-        </div>
-        <div class="content-info">
-            <h2>Instruções</h2>
-            <p>Por favor, preencha o seguinte "Formulário de consulta" com as informações e perguntas ou comentários
-                necessários e pressione "enviar".</p>
-        </div>
-        <form id="contact-form">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-            <!-- Adicione validação JS para o campo 'nome' -->
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-            <!-- Adicione validação JS para o campo 'email' -->
-
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-            <!-- Adicione validação ou limite de caracteres com JS -->
-
-            <button type="submit">Enviar</button>
-            <!-- Validar o formulário antes de enviar -->
-        </form>
+    <div class="center-block">
+        <main class="panel">
+            <div class="panel__half half--first">
+                <h2>Olá, amigo!</h2>
+                <p>Insira seu nome e telefone no formulario ao lado e entraremos em contato!</p>
+                <p>Ou se preferir, nos chame no Whatsapp!</p>
+                <div class="links">
+                    <a href="#">K</a>
+                    <a href="#">V</a>
+                    <a href="#">G</a>
+                    <a href="#">I</a>
+                </div>
+            </div>
+            <div class="panel__half half--second">
+    
+                <h2>Entre em contato!</h2>
+                <form class="input" id="formulario">
+                    <input type="text" placeholder="Nome" id="nome"/>
+                    <input type="email" placeholder="Email" id="email"/>
+                    <input type="phone" placeholder="Telefone" id="telefone"/>
+                    <button type="submit" class="btn-enviar" id="btn-enviar">Sign in</button>
+                </form>
+            </div>
+        </main>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $('#telefone').mask('(00)00000-0000')
+    </script>
 </body>
