@@ -25,7 +25,7 @@ h2 {
 
 p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 small {
@@ -43,6 +43,7 @@ header {
     background-color: #302c2c;
     color: #f6f8e4;
 }
+
 
 /* Sessão principal */
 .main-content {
@@ -84,6 +85,7 @@ header {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
 /* Sessão abaixo da principal */
 .additional-content {
   display: flex;
