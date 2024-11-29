@@ -165,30 +165,73 @@ footer {
 /* Responsividade */
 
   @media screen and (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .main-content {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .main-content .left-section iframe {
-        height: 300px;
-    }
+  .main-content .left-section iframe {
+    width: 100%;
+    height: 300px;
+  }
 
-    .main-content .right-section {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .main-content .right-section {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    width: 100%;
+  }
 
-    .additional-content {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
 
-    .additional-content .left-column,
-    .additional-content .right-column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .main-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .additional-content {
+    gap: 10px;
+    width: 100%; 
+  }
+
+  .upper-row, .lower-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .upper-left-column, 
+  .upper-right-column, 
+  .lower-left-column, 
+  .lower-right-column {
+    width: 100%;
+    height: auto;
+  }
+
+  .upper-right-column img,
+  .lower-left-column img,
+  .lower-right-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .upper-left-column,
+  .upper-right-column,
+  .lower-left-column,
+  .lower-right-column p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .lower-right-column {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }
 
 /* ------------------- ESTRUTURA Páginas de info -------------------------- */
