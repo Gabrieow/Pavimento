@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="assunto.html">Projetos Inspiradores</a></li>
-                        <li><a href="assunto2.html">Tecnologias Sustentáveis</a></li>
-                        <li><a href="assunto3.html">Cidades Sustentáveis</a></li>
+                        <li><a href="assunto.html">Projetos</a></li>
+                        <li><a href="assunto2.html">Tecnologias</a></li>
+                        <li><a href="assunto3.html">Sustentabilidade</a></li>
                     </ul>
                     <ul class="footer-menu">
                         <li><a href="contato.html">Contato</a></li>
