@@ -22,7 +22,7 @@ header, footer{
 }
 
 .coluna-esq-cont h6{
-    color: black;
+    color: var(--preto) !important;
 }
 
 .coluna-dir-cont{
@@ -31,5 +31,11 @@ header, footer{
 
 
 .coluna-dir-cont p, .coluna-dir-cont h2{
-    color: black;
+    color: var(--preto) !important;  
 }
+
+.upper-left-column a, .lower-left-column a, .lower-right-column a,
+.coluna-dir-cont a, .coluna-esq-cont a{
+    color: var(--verde) !important;
+     
+  }
