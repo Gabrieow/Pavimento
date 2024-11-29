@@ -4,10 +4,17 @@
 }
 html{
     overflow-x: hidden !important;
+    scroll-padding-top: 100px !important;
 }
 :root{
     --branco: #f6f8e4;
     --preto: #302c2c;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--preto);
 }
 .menu{
     background-color: var(--preto);
@@ -100,6 +107,10 @@ html{
     line-height: 20px;
     margin-left:5px
   }
+
+.header a{
+    color: var(--white)
+}
 .switch-logo{
     background:var(--preto);
     color: var(--white);

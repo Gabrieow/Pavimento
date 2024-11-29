@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     document.addEventListener('scroll', () => {
         // var headerY = header.getBoundingClientRect().top;
         var scrollPosition = window.scrollY
-        console.log(scrollPosition)
         if(scrollPosition >= 400){
             header.classList.add("sticky-header");
         }else{
