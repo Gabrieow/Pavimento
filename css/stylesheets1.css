@@ -380,7 +380,7 @@ footer p {
   /* Coluna esquerda */
   .coluna-esq-cont {
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 4%;
     flex: 1;
     display: flex;
     flex-direction: column;
