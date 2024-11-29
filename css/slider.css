@@ -68,6 +68,27 @@
 .slide-3{
     background: url(../imgs/GBC_Brasil.png) center no-repeat;
 }
+
+.cidades-sustentaveis .slide-1{
+    background: url(../imgs/compenague.png) center no-repeat;
+}
+.cidades-sustentaveis .slide-2{
+    background: url(../imgs/hotel_sustentavel_singapura.jpg) center no-repeat;
+}
+.cidades-sustentaveis .slide-3{
+    background: url(../imgs/cidade_modelo_curitiba.webp) center no-repeat;
+}
+
+.tecnologias .slide-1{
+    background: url(../imgs/concreto_sem_ciment.avif) center no-repeat;
+}
+.tecnologias .slide-2{
+    background: url(../imgs/energia_solar_residencial.jpg) center no-repeat;
+}
+.tecnologias .slide-3{
+    background: url(../imgs/tijolo_ecologico.webp) center no-repeat;
+}
+
 .slide img{
     width: 100%;
     height: 100%;

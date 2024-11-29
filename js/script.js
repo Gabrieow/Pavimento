@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
     // efeito menu sticky
     document.addEventListener('scroll', () => {
-        // var headerY = header.getBoundingClientRect().top;
+        var headerY = header.getBoundingClientRect().top;
         var scrollPosition = window.scrollY
         if(scrollPosition >= 400){
             header.classList.add("sticky-header");
