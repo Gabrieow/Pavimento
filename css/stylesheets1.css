@@ -55,12 +55,13 @@ small {
 
 .main-content .left-section{
   flex: 1;
+  padding-right: 32px;
 }
 
 .main-content .right-section {
   max-width: 600px;
   flex: 1;
-  padding-left: 20px;
+  padding-left: 32px;
   margin-right: 50px;
 
 }
@@ -72,7 +73,7 @@ small {
 
 .main-content hr {
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #f6f8e4;
 }
 
 .main-content p {
@@ -89,6 +90,7 @@ small {
   margin-right: 40px;
 }
 
+
 .upper-row,
 .lower-row {
   display: flex;
@@ -98,23 +100,25 @@ small {
 
 .upper-row {
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 .lower-row {
-  padding-top: 20px
+  padding-top: 20px;
+
 }
 
 .upper-left-column,
 .lower-left-column {
   flex: 1;
   max-width: 40%;
-  padding-right: 20px;
+  padding-right: 32px;
 }
 
 .upper-right-column,
 .lower-right-column {
   flex: 1.8;
-  padding-left: 20px;
+  padding-left: 32px;
 }
 
 .upper-left-column,
@@ -124,7 +128,12 @@ small {
 
 .lower-left-column,
 .lower-right-column {
-  max-height: 75%;
+  max-height: 85%;
+}
+
+.upper-right-column hr {
+  margin: 32px 0;
+  border: 1px solid #f6f8e4;
 }
 
 .upper-right-column p,
@@ -134,8 +143,9 @@ small {
 }
 
 .lower-right-column p {
-  padding-top: 24px;
+  padding-top: 32px;
 }
+
 
 .upper-left-column img,
 .lower-left-column img,
