@@ -155,6 +155,18 @@ small {
   object-fit: cover;
 }
 
+/* Estilização Legendas embaixo das fotos */
+.upper-left-column h6, .lower-left-column h6, .lower-right-column h6{
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.upper-left-column a, .lower-left-column a, .lower-right-column a{
+  color: #BCB7C6;
+  font-weight: bold; 
+
+}
+
 /* Rodapé */
 footer {
     background-color: #302c2c;
