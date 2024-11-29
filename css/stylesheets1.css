@@ -85,7 +85,9 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
+  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .upper-row,
@@ -95,43 +97,53 @@ header {
   width: 100%;
 }
 
-/* Proportions: Left column is smaller, Right column is 1.8x the width */
+.upper-row {
+  padding-bottom: 20px;
+}
+
+.lower-row {
+  padding-top: 20px
+}
+
 .upper-left-column,
 .lower-left-column {
   flex: 1;
+  max-width: 40%;
+  padding-right: 20px;
 }
 
 .upper-right-column,
 .lower-right-column {
   flex: 1.8;
+  padding-left: 20px;
 }
 
-/* Heights: Lower is 1.6x the height of the upper */
 .upper-left-column,
 .upper-right-column {
-  height: 35%; /* Define a base height */
+  max-height: 35%;
 }
 
 .lower-left-column,
 .lower-right-column {
-  height: 56%; /* 1.6x the height of the upper */
+  max-height: 75%;
 }
 
-/* Content Styling */
-.upper-left-column p,
-.lower-left-column p,
+.upper-right-column p,
 .lower-right-column p {
-  text-align: justify;
-  line-height: 1.5;
-  padding: 10px;
+  text-align: left;
+  line-height: 1.25;
 }
 
-.upper-right-column img,
+.lower-right-column p {
+  padding-top: 24px;
+}
+
+.upper-left-column img,
 .lower-left-column img,
 .lower-right-column img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  object-fit: cover;
 }
 
 /* Rodapé */
