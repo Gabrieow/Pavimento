@@ -1,0 +1,46 @@
+body{
+    background-color: var(--branco) !important;
+}
+p, h1, h2, h3, li{
+    color: var(--preto);
+}
+
+.slider h3{
+    color: white;
+}
+
+header, footer{
+    background-color: var(--branco) !important;
+}
+.toggle-menu .bar{
+    background-color: var(--preto);
+}
+.sticky-header{
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+.coluna-esq-cont h6{
+    color: var(--preto) !important;
+    
+}
+
+.coluna-dir-cont{
+    background-color: var(--branco) !important;
+}
+
+.coluna-dir-cont p, .coluna-dir-cont h2{
+    color: var(--preto) !important;  
+}
+
+.link{
+    color: var(--verde) !important;
+
+  }
+
+.link:hover{
+    text-shadow: 2px 2px 4px rgba(50, 82, 60, 0.4);
+    cursor: pointer;
+}
+
