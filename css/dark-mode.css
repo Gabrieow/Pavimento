@@ -34,20 +34,13 @@ header, footer{
     color: var(--preto) !important;  
 }
 
-.upper-left-column a, .lower-left-column a, .lower-right-column a,
-.coluna-dir-cont a, .coluna-esq-cont a{
+.link{
     color: var(--verde) !important;
-    
-     
+
   }
 
-.upper-left-column a:hover, .lower-left-column a:hover, .lower-right-column a:hover,
-.coluna-dir-cont a:hover, .coluna-esq-cont a:hover{
+.link:hover{
     text-shadow: 2px 2px 4px rgba(50, 82, 60, 0.4);
     cursor: pointer;
 }
 
-.coluna-esq-cont a:hover , .coluna-dir-cont a:hover{
-    text-shadow: 2px 2px 4px rgba(50, 82, 60, 0.4);
-    cursor: pointer;
-}

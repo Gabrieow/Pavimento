@@ -13,32 +13,10 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1.6rem;
-}
-
-p {
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-small {
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-
-
-
+/*---------------INDEX---------------*/
 
 /* Sessão principal */
-.main-content {
+.index-principal {
     display: flex;
     justify-content: space-between;
     padding: 40px;
@@ -47,18 +25,18 @@ small {
     margin-right: 40px;
 }
 
-.main-content .left-section iframe {
+.index-principal-esquerdo iframe {
   width: 100%;
   height: 500px;
   max-width: 1000px;
 }
 
-.main-content .left-section{
+.index-principal-esquerdo{
   flex: 1;
   padding-right: 32px;
 }
 
-.main-content .right-section {
+.index-principal-direito{
   max-width: 600px;
   flex: 1;
   padding-left: 32px;
@@ -73,7 +51,6 @@ small {
 
 .main-content hr {
     margin: 20px 0;
-    border: 1px solid #f6f8e4;
 }
 
 .main-content p {
@@ -81,7 +58,7 @@ small {
 }
 
 /* Sessão abaixo da principal */
-.additional-content {
+.index-adicional {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -91,49 +68,48 @@ small {
 }
 
 
-.upper-row,
-.lower-row {
+.index-adicional-sup,
+.index-adicional-inf {
   display: flex;
   gap: 20px;
   width: 100%;
 }
 
-.upper-row {
+.index-adicional-sup {
   padding-bottom: 20px;
   padding-top: 40px;
 }
 
-.lower-row {
+.index-adicional-inf {
   padding-top: 20px;
-
 }
 
-.upper-left-column,
-.lower-left-column {
+.index-adicional-sup-esq,
+.index-adicional-inf-esq {
   flex: 1;
   max-width: 40%;
   padding-right: 32px;
 }
 
-.upper-right-column,
-.lower-right-column {
+.index-adicional-sup-dir,
+.index-adicional-inf-dir {
   flex: 1.8;
   padding-left: 32px;
 }
 
-.upper-left-column,
-.upper-right-column {
+.index-adicional-sup-esq,
+.index-adicional-sup-dir {
   max-height: 35%;
 }
 
-.lower-left-column,
-.lower-right-column {
+.index-adicional-inf-esq,
+.index-adicional-inf-dir {
   max-height: 85%;
 }
 
+/*
 .upper-right-column hr {
   margin: 32px 0;
-  border: 1px solid #f6f8e4;
 }
 
 .upper-right-column p,
@@ -145,17 +121,20 @@ small {
 .lower-right-column p {
   padding-top: 32px;
 }
+  */
 
 
-.upper-left-column img,
-.lower-left-column img,
-.lower-right-column img {
+.index-adicional-sup-esq img,
+.index-adicional-inf-esq img,
+.index-adicional-inf-dir img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-/* Estilização Legendas embaixo das fotos */
+
+/*
+ Estilização Legendas embaixo das fotos 
 .upper-left-column h6, .lower-left-column h6, .lower-right-column h6{
   font-size: 0.9em;
   text-align: center;
@@ -171,6 +150,7 @@ small {
   cursor: pointer;
 
 }
+  */
 
 
 /* Rodapé */
@@ -186,22 +166,22 @@ footer p {
     font-size: 0.8em;
 }
 
-/* Responsividade */
+/* Responsividade 
 
   @media screen and (max-width: 768px) {
-  .main-content {
+  .index-principal {
     flex-direction: column;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
   }
 
-  .main-content .left-section iframe {
+  .index-principal-esquerdo iframe {
     width: 100%;
     height: 300px;
   }
 
-  .main-content .right-section {
+  .index-principal-direito {
     margin: 0;
     padding: 0;
     text-align: justify;
@@ -258,6 +238,7 @@ footer p {
   }
 
 }
+  /*
 
 /* ------------------- ESTRUTURA Páginas de info -------------------------- */
 
@@ -424,52 +405,51 @@ footer p {
 
   /* ESTILIZAÇÃO Páginas de Assunto */
 
+  .titulo{
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .subtitulo{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .tituloterciario{
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .legenda{
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .conteudoparagrafo{
+    font-size: 1.2em;
+  }
+
+  .link{
+    color: #BCB7C6;
+    font-weight: bold;
+  }
+  
+  .link:hover{
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.5); 
+    cursor: pointer;
+  }
+
+  .listaconteudo li{
+    list-style-type: disc;
+    font-size: 1.2em;
+  }
+
   .coluna-esq-cont img{
     margin-top: 50px;
     height: 450px;
     
   }
 
-  .coluna-esq-cont h6{
-    font-size: 0.9em;
-  }
-
-  .coluna-dir-cont h1{
-    font-size: 2.5em;
-    font-weight: bold;
-  }
-
-  .coluna-dir-cont h2{
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-
-  .coluna-dir-cont h3{
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-
-  .coluna-dir-cont p{
-    font-size: 1.2em;
-  }
-
-  .coluna-dir-cont a,
-  .coluna-esq-cont a{
-    color: #BCB7C6;
-    font-weight: bold;
-  }
-
-  .coluna-dir-cont a:hover,
-  .coluna-esq-cont a:hover{
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.5); 
-    cursor: pointer;
-  }
-
-  .coluna-dir-cont li{
-    font-size: 1.2em;
-    list-style-type: disc;
-
-  }
 
   /* ESTILIZAÇÃO DA TABELA NA PÁGINA DE TECNOLOGIA SUSTENTAVEL */
 
