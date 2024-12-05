@@ -37,10 +37,9 @@ header, footer{
 .link{
     color: var(--verde) !important;
 
-  }
+}
 
 .link:hover{
     text-shadow: 2px 2px 4px rgba(50, 82, 60, 0.4);
     cursor: pointer;
 }
-
