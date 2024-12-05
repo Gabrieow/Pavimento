@@ -71,5 +71,24 @@ document.addEventListener("DOMContentLoaded", () =>{
         }
     })
 
+    // códigozinho pra alterar as imagens no index.principal kkkkkk
+    const imagemDark = document.getElementById("imagem-dark"); 
+    const imagemLight = document.getElementById("imagem-light"); 
+
+    imagemLight.style.display = "none"; 
+    imagemDark.style.display = "block"; 
+
+    btnSwitch.addEventListener('click', () => {
+        if (imagemDark.style.display === "block") {
+            imagemDark.style.display = "none"; 
+            imagemLight.style.display = "block"; 
+        } else {
+            imagemDark.style.display = "block"; 
+            imagemLight.style.display = "none"; 
+        }
+    });
 
 })
+
+
+    
