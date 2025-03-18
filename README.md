@@ -8,4 +8,4 @@ O Site conta com as funcionalidades: Tema Dark e Light, menu fullscreen e formul
 
 Tecnologias utilizadas: HTML, CSS e Javascript.
 
-Link para o projeto: [Clique aqui](gabrieow.github.io/Pavimento/)
+Link para o projeto: [Clique aqui](https://gabrieow.github.io/Pavimento/)
